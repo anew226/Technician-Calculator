@@ -47,9 +47,9 @@
         <p class="denominator speed">time (seconds)</p>
         </aside>
         <p>Stroke:</p>
-        <input type="text" name="stroke" id="stroke" oninput="speedCalc(), kDamping();">
+        <input type="number" name="stroke" id="stroke" oninput="speedCalc(), kDamping();">
         <p>Enter time to complete stroke in seconds:</p>
-        <input type="text" name="strokeTime" id="time" oninput="speedCalc();">
+        <input type="number" name="strokeTime" id="time" oninput="speedCalc();">
         <p>
         <span id="displaySpeedin">____</span> inches/sec
         </p>
@@ -67,9 +67,9 @@
         <p class="denominator lvdt">U1 + U2</p>
         </aside>
         <p>U1:</p>
-        <input type="text" name="u1" id="u1" oninput="gain();">
+        <input type="number" name="u1" id="u1" oninput="gain();">
         <p>U2:</p>
-        <input type="text" name="u2" id="u2" oninput="gain();">
+        <input type="number" name="u2" id="u2" oninput="gain();">
         <p>R2 = <span id=displayR2>____</span></p>
 
     </div>
@@ -81,9 +81,9 @@
         <p class="denominator FP2">FP2: 46.7 psi = 146 lbf</p>
         </aside>
         <p>Enter psi read from gauge for FP1 Ext:</p>
-        <input type="text" name="p1" id="p1" oninput="sealFriction();">
+        <input type="number" name="p1" id="p1" oninput="sealFriction();">
         <p>Enter psi read from gauge for FP2 Ret:</p>
-        <input type="text" name="p2" id="p2" oninput="sealFriction();">
+        <input type="number" name="p2" id="p2" oninput="sealFriction();">
         <p>Seal friction = <span id="displayFP1">____</span> lbf FP1 Ext</p>
         <p>Seal friction = <span id="displayFP2">____</span> lbf FP2 Ret</p>
 
@@ -98,9 +98,9 @@
         <p class="denominator dampCoef">Speed<sup>2</sup></p>
         </aside>
         <p>Enter Force measured on load cell while actuator is in motion (Example: 1125lbf):</p>
-        <input type="text" name="force" id="force" oninput="kDamping();">
+        <input type="number" name="force" id="force" oninput="kDamping();">
         <p>Enter Time for dynamic load to pull actuator from Full Retract to Full Extend (in seconds):</p>
-        <input type="text" name="timeDC" id="timeDC" oninput="kDamping();">
+        <input type="number" name="timeDC" id="timeDC" oninput="kDamping();">
         <p id="stroke_C">Length of stroke: <span id="displayStroke">____</span> inches</p>
         <p>K Damping Coefficient = <span id="displayKDamping">____</span></p>
     </div>
@@ -109,7 +109,7 @@
         <h3>Null Adjustment 282700</h3>
         <p>Enter deviation from neutral:</p>
         <p>Note: + values towards extend / -&nbsp;values&nbsp;towards&nbsp;retract</p>
-        <input type="text" name="devNull_282700" id="devNull_282700" oninput="nullAdjust_282700();">
+        <input type="number" name="devNull_282700" id="devNull_282700" oninput="nullAdjust_282700();">
         <p>You are on tooth = <span id="displayTooth_282700">____</span></p>
         <p>Adjustment = <span id="displayAdjust_282700_1">____</span></p>
         <p><span id="displayAdjust_282700_2">____</span></p>
@@ -119,7 +119,7 @@
         <h3>Null Adjustment 282800</h3>
         <p>Enter deviation from neutral:</p>
         <p>Note: + values towards extend / -&nbsp;values&nbsp;towards&nbsp;retract</p>
-        <input type="text" name="devNull_282800" id="devNull_282800" oninput="nullAdjust_282800();">
+        <input type="number" name="devNull_282800" id="devNull_282800" oninput="nullAdjust_282800();">
         <p>You are on tooth = <span id="displayTooth_282800">____</span></p>
         <p>Adjustment = <span id="displayAdjust_282800_1">____</span></p>
         <p><span id="displayAdjust_282800_2">____</span></p>
@@ -129,7 +129,7 @@
         <h3>Null Adjustment 282900</h3>
         <p>Enter deviation from neutral:</p>
         <p>Note: + values towards extend / -&nbsp;values&nbsp;towards&nbsp;retract</p>
-        <input type="text" name="devNull_282900" id="devNull_282900" oninput="nullAdjust_282900();">
+        <input type="number" name="devNull_282900" id="devNull_282900" oninput="nullAdjust_282900();">
         <p>You are on tooth = <span id="displayTooth_282900">____</span></p>
         <p>Adjustment = <span id="displayAdjust_282900_1">____</span></p>
         <p><span id="displayAdjust_282900_2">____</span></p>
@@ -138,7 +138,7 @@
         <h3>Null Adjustment 283200</h3>
         <p>Enter deviation from neutral:</p>
         <p>Note: + values towards extend / -&nbsp;values&nbsp;towards&nbsp;retract</p>
-        <input type="text" name="devNull_283200" id="devNull_283200" oninput="nullAdjust_283200();">
+        <input type="number" name="devNull_283200" id="devNull_283200" oninput="nullAdjust_283200();">
         <p>You are on tooth = <span id="displayTooth_283200">____</span></p>
         <p>Adjustment = <span id="displayAdjust_283200_1">____</span></p>
         <p><span id="displayAdjust_283200_2">____</span></p>
